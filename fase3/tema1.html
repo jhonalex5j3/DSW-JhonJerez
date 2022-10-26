@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 1</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <h1><center><img src="img/html5_1.png" alt="htmlicono" width="100" eigth="80"> APRENDAMOS HTML5 Y CSS <img src="img/css.png" alt="cssicono" width="115" eight="115"></center> </h1>
+    </header>
+    <nav class="navegacion">
+        <ul class="menu-horizontal">
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+                <a href="#">Temas</a>
+                <ul class="menu-vertical">
+                    <li><a href="tema1.html">Etiquetas-Semanticas</a></li>
+                    <li><a href="tema2.html">CSS-grid</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Recursos Digitales</a>
+                <ul class="menu-vertical">
+                    <li><a href="recurso1.html">Recurso 1</a></li>
+                    <li><a href="recurso2.html">Recurso 2</a></li>
+                </ul>
+            
+            </li>
+            <li>
+                <a href="#">Aprendizaje</a>
+                <ul class="menu-vertical">
+                    <li><a href="#">Opcion 1</a></li>
+                    <li><a href="#">Opcion 2</a></li>
+                </ul>
+            
+            </li>
+            <li><a href="autor.html">Autor</a></li>
+        </ul>
+    </nav>
+    <main class="contenedor">
+        <section class="cont_principal">
+
+
+            <article>
+                <center>
+                    <h2>Qué son Etiquetas Semánticas?</h2><br>
+                </center>
+                <b>Semántica:</b> Según <cite>Angel Alvarez (2012)</cite>, significa perteneciente o relativo a la significación de
+                las palabras. Esa es la definición de la Real Academia de la Lengua Española y es así de sencillo es
+                entender este tipo de etiquetas del lenguaje HTML: Aquellas que dan un significado a las partes del
+                documento. Por decirlo de otra forma, estamos ante <b>etiquetas que indican qué es el contenido que
+                    contienen, en lugar de cómo se debe formatear</b> al mostrar el documento HTML en un cliente web.
+                <br>
+
+                <p>
+                    Para que todas nuestras dudas se despejen, podemos echar mano de un ejemplo. Pensemos en la etiqueta
+                    STRONG ¿Qué nos indica? Que un texto debe resaltarse con mayor fuerza con respecto a otros textos
+                    que no sean "strong", parecido a lo que nos indica la etiqueta B, que todavía es más concreta, al
+                    especificar que un texto debe ser colocado en negrita. Pensemos ahora en una etiqueta DIV, o P. La
+                    primera es una división y P es un párrafo. Todo esto no son más que maneras de decirle al navegador
+                    cómo debe formatear una página, qué debe separar en un texto, en una división normal, o en un
+                    párrafo, etc. <br>
+                    Dentro del etiquetado semántico también tenemos varias funciones, pero para los que los que se
+                    dedican a maquetar páginas web, hay un conjunto de ellas que nos interesan especialmente. Son las
+                    que sirven para definir el esquema principal del documento, como HEADER, ARTICLE, FOOTER, etc. Todas
+                    esas etiquetas semánticas nos indican qué es el contenido que engloban y cuál es su relación con el
+                    conjunto de elementos del documento HTML. <br><br>
+                </p>
+
+                <h4>Etiquetas Semánticas Estructurales</h4>
+                <p> Las etiquetas semanticas sirven para definir la estructura de un documento HTML, para que los
+                    motores de búsqueda, o cualquier otro mecanismo automático que lea un sitio web, sepa con exactitud
+                    qué partes de su contenido corresponden a cada una de las partes típicas de un sitio. Generalmente,
+                    en cualquier documento tenemos una cabecera, un cuerpo y un pie de página, elementos que definen la
+                    estructura representados por diversas etiquetas.
+
+                    De este modo, HTML5 tiene una etiqueta HEADER, que debe englobar aquellos elementos correspondientes
+                    a la cabecera de la página. Tiene un FOOTER, que debe englobar todas las etiquetas que componen el
+                    pie. Luego, para el cuerpo realmente no existe una etiqueta en concreto, sino que se representará
+                    por diversas otras como SECTION, ARTICLE o ASIDE. Existirán además otras etiquetas que representan
+                    elementos típicos como la barra de navegación, etiqueta NAV. <br>
+                    <img class="imgsemanticas" src="img/Etiqu_semanticas.png" alt="etiquetas-semanticas-html5">
+                </p><br>
+                
+                Dentro del etiquetado semántico también tenemos varias funciones, pero las principales y elementales son
+                las que sirven para definir el esquema principal del documento, como HEADER, ARTICLE, FOOTER, etc.
+                Generalmente, en cualquier documento tenemos una cabecera, un cuerpo y un pie de página, elementos que
+                definen la estructura. Todas esas etiquetas semánticas nos indican qué es el contenido que engloban y
+                cuál es su relación con el conjunto de elementos del documento HTML. <br><br><br><br>
+                <ul class="items">
+                    <li><b>header: </b> La cabecera de una web, ojo, no confundir con la etiqueta head.</li>
+                    <li><b>nav: </b>Establece un apartado con enlaces de la página, por ejemplo, un menú.</li>
+                    <li><b>main: </b>Expresa el contenido principal de un documento.</li>
+                    <li><b>section: </b>Define una sección de un documento.</li>
+                    <li><b>article: </b>Indica que el contenido encerrado dentro de las etiquetas es un artículo.</li>
+                    <li><b>aside: </b>El contenido lateral de una página.</li>
+                    <li><b>footer: </b>Hace referencia al pie de una página o sección. <br><br><br>
+                    </li>
+                </ul>
+
+
+            </article>
+
+            <hr><br>
+            <article>
+                <h4>Referencias</h4><br>
+                <p>
+                    Alvarez Miguel Angel.(2012).Etiquetas Semanticas de HTML5.Desarrolloweb. Recuperado de: <a
+                        href="https://desarrolloweb.com/articulos/etiquetas-semanticas-html5.html"
+                        target="_blank">https://desarrolloweb.com/articulos/etiquetas-semanticas-html5.html</a><br>
+
+                    J. Román. (2017).Lenguaje CSS. Tenerife (Canarias, España):Grid css,cuadriculas. Recuperado de: <a
+                        href="https://lenguajecss.com/css/maquetacion-y-colocacion/grid-css/"
+                        target="_blank">https://lenguajecss.com/css/maquetacion-y-colocacion/grid-css/</a><br>
+                </p>
+            </article>
+        </section>
+        <aside class="cont_lateral">
+            <a class="twitter-timeline" data-height="400" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </aside>
+
+
+
+    </main>
+    <footer class="footer" >
+        <img src="img/html_css.png" alt="" class="logo">
+        <div  class="social-icons-container">
+            <img class="img1" src="img/FacebookBlanco.png" alt="facebook" width="30" eight="30">
+            <img class="img2" src="img/InstagramBlanco.png" alt="instagram" width="30" eight="30">
+            <img class="img3" src="img/TwitterBlanco.png" alt="twitter"width="30" eight="30">
+            <img class="img4" src="img/LinkedinBlanco.png" alt="LinkedinBlanco"width="30" eight="30">
+            
+
+            
+        </div>
+        <ul class="footer-menu-container">
+            <li class="menu-item">Nosotros</li>
+            <li class="menu-item">Necesita ayuda?</li>
+            <li class="menu-item">Privacidad</li>
+            <li class="menu-item">Contacto</li>
+        </ul>
+        <span class="copyright">&copy;2022, Jhon Alexander Jerez R./Desarrollador web. Todos los derechos reservados.</span>
+        
+    </footer>
+
+</body>
+
+</html>
