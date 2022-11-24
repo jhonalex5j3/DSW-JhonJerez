@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*font-family: 'Open Sans';*/
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.5s;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+/***********LAYOUT***********/
+/*.encabezado {
+    background-color: #F0EBE3;
+    padding: 30px;
+}*/
+header{
+    background-color: #ddd6cb;
+    padding: 30px;
+
+}
+
+@media screen and (max-width:600px) {
+    header{
+        flex-direction: column;
+    }
+    
+    
+}
+
+.navegacion{
+   /* background-color: #CDFCF6;*/
+    /*padding: 10px;*/
+    max-width: 900px;
+    margin: auto;
+    background-color: #333;
+    font-size: 20px;
+    margin-top: 50px;
+    
+}
+
+
+/*.contenedor{
+    background-color:#fefefe;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-radius: 5px;
+    line-height: 1.5;
+
+}*/
+main{
+    background-color:#fefefe;
+    padding: 30px;
+    display: grid;
+    
+    border-radius: 5px;
+    line-height: 1.5;
+
+}
+
+/*.cont_principal{
+    background-color: rgb(214, 178, 248);
+    padding: 30px;
+    grid-column: 1/4;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}*/
+section{
+    background-color:#fefefe;
+    padding: 30px;
+    display: grid;
+    
+    border-radius: 5px;
+    line-height: 1.5;
+}
+article{
+    background-color: rgb(214, 178, 248);
+    padding: 30px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+/*.cont_lateral{
+    background-color: rgb(124, 124, 216);
+    padding: 30px;
+    grid-column: 4/5;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}*/
+aside{
+    background-color: rgb(124, 124, 216);
+    padding: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+
+.imgsemanticas{
+    width: 200px;
+    border-radius: 5px;
+    float: left;
+    margin-right: 15px;
+}
+.cssconceptos{
+    width: 500px;
+    border-radius: 5px;
+    float: left;
+    margin-right: 15px;
+}
+
+
+.items {
+    margin-right: 15px;
+}
+
+
+/*****pie de pagina***/
+.footer{
+    width: 100%;
+    position:static;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: #0e0e0e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    
+}
+
+.logo{
+    height: 80px;
+    margin-bottom: 1rem;
+}
+ 
+.social-icons-container, .footer-menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.social-icons-container img{
+    width: 30px;
+}
+.img1{
+    margin-right: 10px;
+}
+.img2{
+    margin-right: 10px;
+}
+.img3{
+    margin-right: 10px;
+}
+.img4{
+    margin-right: 10px;
+}
+
+
+.footer-menu-container{
+    list-style-type: none;
+    color: #f2f2f2;
+    font-size: 18px;
+}
+
+.menu-item{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.menu-item:hover{
+    opacity: 1;
+}
+
+.copyright{
+    color: #f2f2f2;
+    opacity: 0.3;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+/**************MENU DESPLEGABLE********/
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.menu-horizontal > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+}
+.menu-horizontal > li:hover{
+	background-color: red;
+}
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 150px;
+	background-color: rgba(0, 0, 0, .5);
+}
+.menu-horizontal li:hover .menu-vertical{
+	display: block;
+}
+.menu-vertical li:hover{
+	background-color: black;
+}
+
+.menu-vertical li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+}
+
+#html{
+	margin: auto;
+	padding: 20px;
+	max-width: 900px;
+	background: white;
+
+}
+

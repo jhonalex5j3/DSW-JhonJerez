@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="encabezado">
+        <h1>
+            <center><img src="img/html5_1.png" alt="htmlicono" width="100" eigth="80"> APRENDAMOS HTML5 Y CSS <img
+                    src="img/css.png" alt="cssicono" width="115" eight="115"></center>
+        </h1>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Temas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="tema1.html">Etiquetas-Semanticas</a></li>
+                            <li><a class="dropdown-item" href="tema2.html">CSS-grid</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Recursos Digitales
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="recurso1.html">Recurso 1</a></li>
+                            <li><a class="dropdown-item" href="recurso2.html">Recurso 2</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Aprendizaje
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="evaluacion1.html">Evaluacion 1</a></li>
+                            <li><a class="dropdown-item" href="evaluacion2.html">Evaluacion 2</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="autor.html">Autor</a>
+                    </li>
+
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-fluid">
+        <section class="row">
+
+            <article class="col-md-8">
+                <center>
+                    <h2>Conceptos CSS-grid</h2><br>
+                </center>
+                <p>Según <cite>Uriel Hernández(2020)</cite>, Trabajar con una grilla usando el módulo de CSS Grid
+                    implica dos cosas, definir la grilla y posicionar elementos en la grilla. <br>
+
+                    Definir la grilla significa que vamos a especificar de cuántas columnas y cuántas filas se compondrá
+                    la grilla, además del tamaño que tendrá cada fila y cada columna. En la intersección de la
+                    definición de estas filas y estas columnas se generan espacios en los que podemos posicionar
+                    elementos. <br>
+
+                    Un par de conceptos muy importantes son los de las líneas y las áreas. Aunque la grilla es virtual,
+                    cada línea límite de cada fila y cada columna tiene un nombre, por defecto un número empezando por
+                    el 1 que indica en qué posición está la línea, sin embargo, puedes especificar los nombres de estas
+                    líneas. <br>
+
+                    Lo que hace increíble al Grid es el sistema de dos dimensiones, el que nos permite extender
+                    elementos a través de múltiples columnas y filas, esto lo hacemos a través de distintos principios
+                    que conocerás más adelante, entre ellos indicar la línea en la que inicia un elemento y la línea en
+                    la que termine, un indicador de cuántos espacios de la grilla debe usar, etc. <br>
+
+                    Además, es posible que nosotros definamos áreas dentro de la grilla, es decir, espacios predefinidos
+                    que ocupen 1 o varias filas y columnas, eventualmente, podemos indicarle a un elemento que ocupe
+                    dicha área. <br>
+
+                    Tanto las líneas como las áreas de la grilla son elementos virtuales que no se ven y por tanto no
+                    afectan el cómo se muestra tu página, sin embargo, estos elementos sirven como referencia para que
+                    podamos colocar elementos dentro de la grilla. <br>
+
+                    En resumen, la grilla tiene un número definido de filas y un número definido de columnas, al final
+                    de cada una se coloca una línea a la que podemos asignarle un nombre, si juntamos 1 o más filas o
+                    columnas, podemos formar un área, podemos asignar un elemento a dicha área. Las áreas son una
+                    alternativa para definir la posición de un elemento, pero no son la única forma, poco a poco las
+                    iremos conociendo en los siguientes temas, continuemos... <br>
+
+                    segun <cite> J. Román (2017)</cite>, Para utilizar Grid CSS necesitaremos tener en cuenta una serie de conceptos que utilizaremos a
+                    partir de ahora y que definiremos a continuación: <br><br>
+                    <img class="cssconceptos" src="img/grid-css-conceptos.png" alt="grid-css-conceptos">
+                </p>
+
+                <ul>
+                    <li><strong>Contenedor:</strong>El elemento padre contenedor que definirá la cuadrícula o rejilla.
+                    </li>
+                    <li><strong>Ítem:</strong>Cada uno de los hijos que contiene la cuadrícula (elemento contenedor).
+                    </li>
+                    <li><strong>Celda (grid cell):</strong>Cada uno de los cuadritos (unidad mínima) de la cuadrícula.
+                    </li>
+                    <li><strong>Area (grid area):</strong>Región o conjunto de celdas de la cuadrícula.</li>
+                    <li><strong>Banda (grid track):</strong>Banda horizontal o vertical de celdas de la cuadrícula.</li>
+                    <li><strong>Línea (grid line):</strong>Separador horizontal o vertical de las celdas de la
+                        cuadrícula</li>
+
+                </ul><br><br>
+                <p>Para utilizar cuadriculas Grid CSS, trabajaremos bajo el siguiente escenario:<br>
+                    <img src="img/contenedor_items.JPG" alt="" width="500" eight="100"> <br>
+                    Para activar la cuadrícula grid hay que utilizar sobre el elemento contenedor la propiedad display y
+                    especificar uno de los dos valores que queramos utilizar: grid o inline-grid. <br>
+                    <img src="img/grid1.JPG" alt="" width="600" eight="100"><br>
+                    Este valor influye en como se comportará la cuadrícula con el contenido exterior. El primero de
+                    ellos permite que la cuadrícula aparezca encima/debajo del contenido exterior (en bloque) y el
+                    segundo de ellos permite que la cuadrícula aparezca a la izquierda/derecha (en línea) del contenido
+                    exterior (ojo, la cuadrícula entera, no cada uno de sus ítems): <br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>display: grid</th>
+                            <th>display:inline-grid</th>
+                        </tr><br>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="img/grid2.JPG" alt="" width="300"></td>
+                            <td><img src="img/grid3.JPG" alt=""></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Una vez elegido uno de estos dos valores, y establecida la propiedad display al elemento contenedor,
+                    hay varias formas de configurar nuestra cuadrícula grid. Al igual que con Flex, muchas de las
+                    propiedades se aplican al contenedor padre, sin embargo, existen algunas que se aplican sobre los
+                    elementos hijos. Las iremos viendo todas detalladamente.</p> <br>
+                <h3>Definir filas y columnas</h3>
+                <h4>filas y columnas fijas</h4> <br>
+                En <b>Grid CSS</b> Grid CSS, la forma principal de definir una cuadrícula es indicar el tamaño de sus
+                filas y sus columnas de forma explícita. Para ello, sólo tenemos que usar las propiedades CSS
+                <b>grid-template-columns y grid-template-rows:</b>
+                <img src="img/grid4.JPG" alt="" width="600"><br>
+                Conociendo estas dos propiedades, asumamos el siguiente código CSS: <br>
+                 <img src="img/grid5.JPG" alt="" width="300"><br>       
+                Con la propiedad display: grid definimos que queremos crear un grid, y mediante las propiedades
+                grid-template-columns y grid-template-rows definimos los tamaños de las columnas y las filas del mismo.
+                Esto significa que, a priori, tendríamos una cuadricula o grid de 4 celdas en total: <br>
+                <img src="img/grid6.JPG" alt="" width="300">
+                </p>
+                <hr><br>
+
+                <h4>Referencias</h4><br>
+                <p>
+                    Alvarez Miguel Angel.(2012).Etiquetas Semanticas de HTML5.Desarrolloweb. Recuperado de: <a
+                        href="https://desarrolloweb.com/articulos/etiquetas-semanticas-html5.html"
+                        target="_blank">https://desarrolloweb.com/articulos/etiquetas-semanticas-html5.html</a><br>
+
+                    J. Román. (2017).Lenguaje CSS. Tenerife (Canarias, España):Grid css,cuadriculas. Recuperado de: <a
+                        href="https://lenguajecss.com/css/maquetacion-y-colocacion/grid-css/"
+                        target="_blank">https://lenguajecss.com/css/maquetacion-y-colocacion/grid-css/</a><br>
+                </p>
+
+
+            </article>
+
+
+            <aside class="col-md-4">
+                <a class="twitter-timeline" data-height="400"
+                    href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </aside>
+        </section>
+
+
+
+
+    </main>
+    <footer class="footer">
+        <img src="img/html_css.png" alt="" class="logo">
+        <div class="social-icons-container">
+            <img class="img1" src="img/FacebookBlanco.png" alt="facebook" width="30" eight="30">
+            <img class="img2" src="img/InstagramBlanco.png" alt="instagram" width="30" eight="30">
+            <img class="img3" src="img/TwitterBlanco.png" alt="twitter" width="30" eight="30">
+            <img class="img4" src="img/LinkedinBlanco.png" alt="LinkedinBlanco" width="30" eight="30">
+
+
+
+        </div>
+        <ul class="footer-menu-container">
+            <li class="menu-item">Nosotros</li>
+            <li class="menu-item">Necesita ayuda?</li>
+            <li class="menu-item">Privacidad</li>
+            <li class="menu-item">Contacto</li>
+        </ul>
+        <span class="copyright">&copy;2022, Jhon Alexander Jerez R./Desarrollador web. Todos los derechos
+            reservados.</span>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
